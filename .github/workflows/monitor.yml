@@ -1,0 +1,21 @@
+name: Monitor dos sites
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # a cada 10 minutos (o GitHub pode atrasar alguns minutos)
+  workflow_dispatch: {}       # botão "Run workflow" para conferir na hora
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir os endereços
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: ./monitor.sh
