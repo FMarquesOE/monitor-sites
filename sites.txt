@@ -3,4 +3,3 @@ Site da consultoria|https://www.fmarquestbg.com.br/||Painel do Vercel → projet
 Site do studio|https://vmafraunhas.com.br/||Painel do Vercel → projeto vanessa-mafra-nails → Deployments e Registro.br (domínio em dia?).
 Automação do Instagram|https://fmarquestbg-ig-autopilot.vercel.app/privacidade.html||Painel do Vercel → projeto fmarquestbg-ig-autopilot → Deployments. Se ficar fora perto das 11h, o post do dia pode não sair: conferir /api/status depois que voltar.
 FM Connect (placas e cartões)|https://t.fmarquestbg.com.br/api/health|"ok":true|Esta conferência também testa o banco. Ver o painel do Supabase (projeto pausado?) e o projeto smart-tag no Vercel. Enquanto estiver fora, quem tocar numa placa ou cartão vê a página de erro.
-Teste do aviso (pode ignorar)|https://t.fmarquestbg.com.br/api/health|"ok":true|Teste da instalação do monitor.
